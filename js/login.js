@@ -15,7 +15,7 @@ new Vue({
                 const token = response.data.token;
                 const expired = response.data.expired;
                 document.cookie = `token=${token};expires=${new Date(expired * 1000)}; path=/`;
-                window.location = '../products.html';
+                window.location = 'products.html';
             }).catch((err)=>{
                 console.log(err);
             });
